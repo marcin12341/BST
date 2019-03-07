@@ -1,0 +1,34 @@
+make: main.c BST.c BST.h
+	gcc -c BST.c -o BST.o
+	ar r lib_BST.a BST.o
+	gcc -c main.c -o main.o
+	gcc main.o lib_BST.a -o wynik.out
+	echo
+	./wynik.out
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

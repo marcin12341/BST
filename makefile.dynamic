@@ -1,0 +1,7 @@
+make: main.c BST.c BST.h
+	gcc -c -Wall -fPIC -D_GNU_SOURCE BST.c
+	gcc BST.o -shared -o lib_BST.so
+	gcc -c main.c -o main.o
+	gcc main.o -L. -l_BST -o wynik.out
+	echo
+	./wynik.out
